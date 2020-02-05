@@ -3,7 +3,7 @@ function yvzshrc_yay() {
     alias search='yay -Ss'
 
     function paclean() {
-        if yay -Qtdq > /dev/null then
+        if yay -Qtdq > /dev/null; then
             yay -Rnsu $(yay -Qtdq)
         fi
         sudo paccache -rk 2

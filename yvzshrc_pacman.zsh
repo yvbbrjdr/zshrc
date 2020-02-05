@@ -3,7 +3,7 @@ function yvzshrc_pacman() {
     alias search='pacman -Ss'
 
     function paclean() {
-        if pacman -Qtdq > /dev/null then
+        if pacman -Qtdq > /dev/null; then
             sudo pacman -Rnsu $(pacman -Qtdq)
         fi
         sudo paccache -rk 2
