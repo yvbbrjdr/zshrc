@@ -1,7 +1,11 @@
 function yvzshrc_apt() {
     alias pacupdate='sudo apt update && sudo apt upgrade && paclean'
     alias search='apt search'
-    alias paclean='sudo apt autoremove --purge; sudo apt clean'
+
+    function paclean() {
+        sudo apt autoremove --purge
+        sudo apt clean
+    }
 
     function get() {
         sudo apt install $@ && paclean
