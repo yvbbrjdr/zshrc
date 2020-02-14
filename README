@@ -1,0 +1,3 @@
+git clone https://github.com/yvbbrjdr/zshrc
+zshrc/install.sh
+rm -rf zshrc
