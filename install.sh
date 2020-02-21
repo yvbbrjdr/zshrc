@@ -2,7 +2,7 @@
 
 DEST="$ZSH/custom"
 CUSTOM_FILE="yvzshrc_custom.zsh"
-OTHER_FILES="yvzshrc_apt.zsh yvzshrc_global.zsh yvzshrc_pacman.zsh yvzshrc_systemd.zsh yvzshrc_yay.zsh"
+OTHER_FILES="yvzshrc_apt.zsh yvzshrc_brew.zsh yvzshrc_global.zsh yvzshrc_pacman.zsh yvzshrc_systemd.zsh yvzshrc_yay.zsh"
 cd "$(dirname "$0")"
 if [[ -w "$DEST" ]]; then
     cp $OTHER_FILES "$DEST"
